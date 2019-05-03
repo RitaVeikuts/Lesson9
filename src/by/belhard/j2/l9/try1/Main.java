@@ -1,4 +1,7 @@
-package by.belhard.j2.l9;
+package by.belhard.j2.l9.try1;
+
+import by.belhard.j2.l9.try1.Exception1;
+import by.belhard.j2.l9.try1.Exception2;
 
 public class Main {
 
