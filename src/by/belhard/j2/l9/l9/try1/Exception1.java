@@ -1,4 +1,4 @@
-package by.belhard.j2.l9.try1;
+package by.belhard.j2.l9.l9.try1;
 
 public class Exception1 extends RuntimeException{
 

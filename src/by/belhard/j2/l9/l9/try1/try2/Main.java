@@ -1,4 +1,4 @@
-package by.belhard.j2.l9.try2;
+package by.belhard.j2.l9.l9.try1.try2;
 
 import java.util.ArrayList;
 import java.util.Comparator;
