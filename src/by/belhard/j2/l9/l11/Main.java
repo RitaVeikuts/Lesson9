@@ -2,6 +2,8 @@ package by.belhard.j2.l9.l11;
 
 import java.sql.*;
 
+import static java.lang.Integer.*;
+
 
 public class Main {
 
@@ -10,6 +12,7 @@ public class Main {
     private static final String PASSWORD = "rootroot1";
     private static final String URL = "jdbc:mysql://localhost:3306/company?serverTimezone=UTC";
     private static Object SQLException;
+    private static Object NumberFormatException;
 
 
     public static void main(String[] args) throws SQLException {
@@ -47,15 +50,18 @@ public class Main {
         //query = "update employees set (salary = salary +?) where salary <?;";
         PreparedStatement preparedStatement = connection.prepareStatement("update employees set salary = salary +? where salary <?;");
 
-        int delta =100;
+        int delta = 100;
         String nameIn = "Viktor";
         preparedStatement.setInt(1, delta);
-        preparedStatement.setInt(2, nameIn);
+        preparedStatement.setInt(2, parseInt(nameIn));
 
-        preparedStatement.execute();
-    }  catch(SQLException e);{
-        e.printStackTrace();
-        }
+        boolean execute = preparedStatement.execute();}
 
+        NumberFormatException ex = new NumberFormatException(){
+         { ex.printStackTrace();
+             return();
     }
+
+} ;
+}
 
